@@ -3,8 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameplayTagContainer.h"
 #include "UObject/Interface.h"
 #include "AIControllerInterface.generated.h"
+
 
 class UStateTree;
 // This class does not need to be modified.
@@ -26,4 +28,7 @@ public:
 	
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="StateTreeLibrary")
 	void SetStateTree(UStateTree* StateTree);
+	
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="StateTreeLibrary")
+	void SendEventToStateTree(FGameplayTag EventTag);
 };

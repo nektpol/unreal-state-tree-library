@@ -27,3 +27,8 @@ void AStateTreeAIController::SetStateTree_Implementation(UStateTree* StateTree)
 	StateTreeAIComponent->SetStateTree(StateTree);
 	StateTreeAIComponent->StartLogic();
 }
+
+void AStateTreeAIController::SendEventToStateTree_Implementation(FGameplayTag EventTag)
+{
+	StateTreeAIComponent->SendStateTreeEvent(EventTag);
+}

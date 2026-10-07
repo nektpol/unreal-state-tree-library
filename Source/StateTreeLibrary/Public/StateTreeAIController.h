@@ -22,6 +22,7 @@ public:
 	AStateTreeAIController();
 	
 	virtual void SetStateTree_Implementation(UStateTree* StateTree) override;
+	virtual void SendEventToStateTree_Implementation(FGameplayTag EventTag) override;
 	
 private:
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly,Category = "Components", meta = (AllowPrivateAccess = "true"))

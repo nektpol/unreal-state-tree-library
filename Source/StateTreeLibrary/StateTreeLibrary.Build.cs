@@ -25,7 +25,7 @@ public class StateTreeLibrary : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core", "AIModule", "GameplayStateTreeModule",
+				"Core", "AIModule", "GameplayStateTreeModule","GameplayTags"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
