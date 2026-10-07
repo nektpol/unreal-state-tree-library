@@ -25,7 +25,7 @@ public class StateTreeLibrary : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core",
+				"Core", "AIModule", "GameplayStateTreeModule",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -37,7 +37,7 @@ public class StateTreeLibrary : ModuleRules
 				"CoreUObject",
 				"Engine",
 				"Slate",
-				"SlateCore",
+				"SlateCore", "StateTreeModule",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
