@@ -7,6 +7,7 @@
 #include "AIController.h"
 #include "AIController.h"
 #include "AIControllerInterface.h"
+#include "DetourCrowdAIController.h"
 #include "StateTreeAIController.generated.h"
 
 class UStateTreeAIComponent;
@@ -14,7 +15,7 @@ class UStateTreeAIComponent;
  * 
  */
 UCLASS()
-class STATETREELIBRARY_API AStateTreeAIController : public AAIController, public IAIControllerInterface
+class STATETREELIBRARY_API AStateTreeAIController : public ADetourCrowdAIController, public IAIControllerInterface
 {
 	GENERATED_BODY()
 	
